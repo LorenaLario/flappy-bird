@@ -8,11 +8,11 @@ class Pollito {
       this.x = 50; //posicion eje x
       this.y = canvas.height / 2; //posicion eje y
 
-      this.w = 50;  //ancho del pollito
-      this.h = 45;  //alto del pollito
+      this.w = 40;  //ancho del pollito
+      this.h = 35;  //alto del pollito
 
-      this.gravitySpeed = 1.5; //velocidad de la caida
-      this.jumpSpeed = 70; //velocidad del salto
+      this.gravitySpeed = 1.3; //velocidad de la caida
+      this.jumpSpeed = 43; //velocidad del salto
 
     }
 

@@ -1,14 +1,19 @@
 class Tubo {
-  constructor() {
+  constructor( positionY, isImgUp ) {
     // propiedades de cada tubo
 
     this.img = new Image();
-    this.img.src = "images/obstacle_top.png"; // es la de arriba o de abajo?
+    if (isImgUp === true) {
+        this.img.src = "images/obstacle_top.png"; // es la de arriba o de abajo?
+    } else {
+        this.img.src = "images/obstacle_bottom.png"
+    }
+   
 
     this.x = canvas.width;
-    this.y = 0; //esto debería ser aleatorio?
+    this.y = positionY; //esto debería ser aleatorio(ahora lo es, antes era 0)
     this.w = 60;
-    this.h = 200;
+    this.h = 230;
     this.speed = 1.5;
   }
 
@@ -23,3 +28,6 @@ class Tubo {
     this.x -= this.speed;
   };
 }
+
+
+//esto de crear dos elementos, toda esta logica e suna logica para este juego.
